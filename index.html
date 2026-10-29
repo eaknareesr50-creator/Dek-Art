@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-lowest": "#0c0e14",
+          "on-secondary": "#492900",
+          "primary-fixed-dim": "#99cbff",
+          "secondary-fixed": "#ffdcbd",
+          "inverse-primary": "#00629d",
+          "on-tertiary-container": "#2b298b",
+          "on-tertiary-fixed-variant": "#3b3a9a",
+          "primary-container": "#31a8ff",
+          "tertiary-fixed": "#e2dfff",
+          "tertiary-fixed-dim": "#c2c1ff",
+          "primary-fixed": "#cfe5ff",
+          "background": "#111319",
+          "on-surface-variant": "#bfc7d3",
+          "on-error": "#690005",
+          "on-tertiary": "#231f83",
+          "on-secondary-fixed-variant": "#693c00",
+          "on-primary-fixed-variant": "#004a78",
+          "on-secondary-fixed": "#2c1600",
+          "on-primary-container": "#003b61",
+          "surface-tint": "#99cbff",
+          "secondary-fixed-dim": "#ffb86d",
+          "surface-container": "#1e1f26",
+          "outline-variant": "#3f4852",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-fixed": "#0b006b",
+          "on-primary-fixed": "#001d33",
+          "on-primary": "#003354",
+          "on-secondary-container": "#643900",
+          "surface-container-low": "#191b22",
+          "error": "#ffb4ab",
+          "inverse-on-surface": "#2e3037",
+          "error-container": "#93000a",
+          "primary": "#99cbff",
+          "surface-variant": "#33343b",
+          "tertiary": "#c2c1ff",
+          "on-background": "#e2e2eb",
+          "surface-container-highest": "#33343b",
+          "on-surface": "#e2e2eb",
+          "secondary": "#ffc07f",
+          "surface-container-high": "#282a30",
+          "surface-bright": "#373940",
+          "outline": "#89919d",
+          "tertiary-container": "#9797fd",
+          "inverse-surface": "#e2e2eb",
+          "surface-dim": "#111319",
+          "surface": "#111319",
+          "secondary-container": "#fd9900"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.25rem",
+          "margin-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "gutter-mobile": "0.75rem"
+        },
+        "fontFamily": {
+          "body-sm": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "headline-xl": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "display-lg": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "headline-sm": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "label-sm": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "headline-xl-mobile": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "label-md": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "body-md": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "body-lg": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "headline-md": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ],
+          "headline-lg": [
+            "\"Inter, 'Noto Sans Thai', sans-serif\""
+          ]
+        },
+        "fontSize": {
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.45)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="CanvasMentor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XrvMiOTbW42nFSZrjp80uR0WlWzmZOiNaHtrqwgQg_ADICLEkgaKS8orLSJteaFXM20glpDQsxARDWu41MVF5bHaPnh2BqW787Qr7kr96vthY6p8InJ4_U3ZozlMR6Qkns5nOrz-cOt4ELZYF0o3NVheUSa2xlq204ccFN79y2GGw_RHl1ngtFPJLHID_ZxGKhXbmymIlZV177aV822HysbkRoBDQw2tikc91QrDTo0oK4H7r9bo8WxTI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CanvasMentor</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Studio Workspace</span></div></div><div class="hidden xl:flex items-center bg-surface-container-low rounded-lg p-space-xs"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-primary hover:bg-surface-container-high transition-colors" type="button">Photoshop</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:bg-surface-container-high transition-colors" type="button">Illustrator</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-tertiary hover:bg-surface-container-high transition-colors" type="button">Procreate</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">Fresco</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">After Effects</button></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-label-md rounded-lg"><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="software-hub" href="#">หน้าแรก (Software Hub)</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="q-and-a-rooms" href="#">ปรึกษาคำถาม Q&amp;A</a><a aria-current="page" class="px-3 py-1.5 transition-all bg-surface-container-high text-primary font-label-md rounded-lg" data-path="mentor-feedback-studio" href="#">สตูดิโอตรวจงาน</a><a class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="my-dashboard" href="#">แดชบอร์ดติดตามงาน</a></nav><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 w-48 focus-within:w-64 focus-within:ring-1 focus-within:ring-primary-container transition-all"><span class="material-symbols-outlined text-outline text-lg mr-2">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="ค้นหาหัวข้อ / เทคนิค..." type="text"/></div><button aria-label="การแจ้งเตือน" class="relative w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary-container font-label-md text-label-md px-3 py-1.5 rounded-lg transition-transform active:scale-95 shadow-[0_2px_10px_rgba(49,168,255,0.25)]" type="button"><span class="material-symbols-outlined text-base">add</span><span class="hidden sm:inline">ถามคำถามใหม่ (+ Ask Question)</span><span class="sm:hidden">ถามคำถาม</span></button><div class="flex items-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSTRj4p3oNx2VDDSKMJgknvYxgkiTYDx3Pc_pBJIoMyerYnDYNQ0fpLX7_-l85TueBgGAwyIV1IaZ3T8gP99Y1LMWNWX_6nEkLPBchnQMfWHfQGvBXH32HV0M9B6voOi3QeaRZfxjCp7XaJE1QcoU78FkJKlfYvs54vUALKJeFdy4R8Ua5dlPHkHrxT1MEnMc7tq0qDLC23evomgB2QQowTirZxqFWeq4KH7_Z76c9G8olareO_S7TxA"/></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full">
+<!-- Top HUD / Control Bar -->
+<header class="w-full bg-surface-container-lowest/90 backdrop-blur-md px-gutter py-space-sm flex flex-col xl:flex-row items-center justify-between gap-space-sm shadow-md z-40 select-none">
+<!-- Left: Navigation & Art Title Metadata -->
+<div class="flex items-center gap-space-md w-full xl:w-auto min-w-0">
+<a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all active:scale-95 group text-decoration-none flex-shrink-0" href="#">
+<span class="material-symbols-outlined text-primary text-lg group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span class="font-label-md text-label-md text-on-surface font-medium hidden sm:inline">สตูดิโอตรวจงาน</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">(Critique Studio)</span>
+</a>
+<div class="h-6 w-px bg-surface-container-highest flex-shrink-0 hidden sm:block"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">การจัดแสง Rim Light ตัวละคร Cyberpunk Warrior</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm flex-shrink-0">รอบตรวจ #2</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span>โดย <strong class="text-on-surface">@artisan_k</strong></span>
+<span class="text-outline">/</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">verified</span>
+            ตรวจโดย <strong>Mentor Tan</strong> <span class="text-xs text-outline">(Art Director)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Center: View Mode Switcher -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-inner gap-1 overflow-x-auto max-w-full">
+<button class="mode-btn active flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-primary shadow-sm transition-all whitespace-nowrap" id="mode-split" onclick="switchViewerMode('split')">
+<span class="material-symbols-outlined text-base">surfing</span>
+<span>Before / After Slider</span>
+</button>
+<button class="mode-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" id="mode-paintover" onclick="switchViewerMode('paintover')">
+<span class="material-symbols-outlined text-base">brush</span>
+<span>Paintover (100%)</span>
+</button>
+<button class="mode-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" id="mode-original" onclick="switchViewerMode('original')">
+<span class="material-symbols-outlined text-base">image</span>
+<span>Original Artwork</span>
+</button>
+<button class="mode-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" id="mode-guides" onclick="switchViewerMode('guides')">
+<span class="material-symbols-outlined text-base">straighten</span>
+<span>Lines &amp; Notes Only</span>
+</button>
+</div>
+<!-- Right: Viewport Controls & Tool Actions -->
+<div class="flex items-center gap-1.5 flex-shrink-0 self-end xl:self-auto">
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="zoom-out" onclick="adjustZoom(-10)" title="Zoom Out (-)">
+<span class="material-symbols-outlined text-base">zoom_out</span>
+</button>
+<span class="px-2 font-label-sm text-label-sm text-on-surface font-mono min-w-[48px] text-center" id="zoom-val">150%</span>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="zoom-in" onclick="adjustZoom(10)" title="Zoom In (+)">
+<span class="material-symbols-outlined text-base">zoom_in</span>
+</button>
+<button class="px-2 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" id="zoom-fit" onclick="resetZoom()" title="Fit to Screen">Fit</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="btn-flip" onclick="toggleFlipCanvas()" title="Mirror View (Flip Horizontal)">
+<span class="material-symbols-outlined text-base">flip</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="btn-grid" onclick="toggleGridOverlay()" title="Rule of Thirds Grid">
+<span class="material-symbols-outlined text-base">grid_3x3</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="btn-probe" onclick="toggleProbeTool()" title="Color Probe / Eyedropper">
+<span class="material-symbols-outlined text-base">colorize</span>
+</button>
+</div>
+<div class="h-6 w-px bg-surface-container-highest mx-1"></div>
+<div class="flex items-center gap-1">
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md transition-all shadow-sm active:scale-95">
+<span class="material-symbols-outlined text-base">download</span>
+<span class="hidden md:inline font-medium">PSD &amp; PNG</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Share Critique Summary">
+<span class="material-symbols-outlined text-base">share</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Viewport Workspace: Canvas (Center) + Inspector (Right) -->
+<div class="relative w-full flex-1 flex flex-col lg:flex-row overflow-hidden bg-surface-container-lowest" style="min-height: calc(100vh - 128px);">
+<!-- Left/Center Canvas Viewport Container -->
+<div class="relative flex-1 h-[680px] lg:h-auto overflow-hidden flex items-center justify-center select-none bg-surface-container-lowest" id="canvas-container">
+<!-- Ambient Studio Lighting Glow -->
+<div class="absolute w-[500px] h-[500px] rounded-full bg-primary-container/5 blur-3xl pointer-events-none -top-24 -left-24"></div>
+<div class="absolute w-[450px] h-[450px] rounded-full bg-secondary/5 blur-3xl pointer-events-none -bottom-24 right-1/4"></div>
+<!-- Grid Overlay (Toggleable) -->
+<div class="absolute inset-0 pointer-events-none hidden z-20" id="rule-of-thirds-grid">
+<div class="w-full h-full grid grid-cols-3 grid-rows-3">
+<div class="border-r border-b border-primary/20"></div>
+<div class="border-r border-b border-primary/20"></div>
+<div class="border-b border-primary/20"></div>
+<div class="border-r border-b border-primary/20"></div>
+<div class="border-r border-b border-primary/20"></div>
+<div class="border-b border-primary/20"></div>
+<div class="border-r border-primary/20"></div>
+<div class="border-r border-primary/20"></div>
+<div></div>
+</div>
+</div>
+<!-- Canvas Transform Wrapper -->
+<div class="relative transition-transform duration-150 ease-out origin-center max-w-[92%] max-h-[92%] shadow-2xl rounded-lg overflow-hidden flex items-center justify-center" id="canvas-viewport" style="transform: scale(1);">
+<!-- Base Artwork (Original) -->
+<img class="w-[880px] h-[640px] max-w-none object-cover pointer-events-none select-none block" data-alt="A dark sci-fi cyberpunk warrior female protagonist standing in a neon rainy alleyway holding a glowing plasma sword. Intricate mechanical armor, reflective visor, dark atmospheric moody lighting with soft cyan and warm amber street reflections, dynamic high-contrast digital illustration concept art style." id="base-artwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAFOnoP3pMxKrtNMWN4-9brrRliSrAMlR8tvtGTfwJnMduaN0ty7yhGgEOht5TYfuQQMH2Y-Az28m10c_gkeXzBfmcne1LZj_ogYvdOy5dSyJ2atfVdDEevCWIAWpprLkXR8V1srq7X25MVYoZPCGIkxcDo7iulhuN7P8Xj5koVdxVk7QJnFIeji7BHNRpPgl0tjcoOZaL2jW2j2IAzmvt7Cu0fVW7AroKEmlwh9JzOk7mn-A3N70zUQ"/>
+<!-- Split / Paintover Top Layer Container -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none" id="split-overlay-container" style="clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);">
+<!-- Paintover Image Layer (Corrected Rim Light & Anatomy) -->
+<img class="w-[880px] h-[640px] max-w-none object-cover pointer-events-none select-none" data-alt="The same cyberpunk warrior character digital illustration enhanced with mentor paintover strokes: vibrant neon cyan rim lights outlining the silhouette of the braided hair and shoulder armor, subtle orange reflected bounce light on the chestplate, corrected dynamic fighting spine posture, vivid energetic digital art masterclass paintover." id="paintover-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70vKYCwTxbNu9VOUhflakpbhWTABnPATNvHAqGBvaXHhQ1Vx8-WqQgLVIiJcU7bMhJNOCiwzRRgnh63eSb-WTgLkcvZj3VXKkxcSadzg4m7vbYjWxb24eLZPO2DAimxoriBjMrAVXIoHE0lrTg_-BQ94IOhAaL5eA59EmA6_-Cqn5JTO8z4MEVHvGZJUcXbMudYKr800zAJJZaRHh2MEDABw8bD-yFs2aFsTWL5dT6XerrtFuAuJHrQ"/>
+<!-- Paintover Neon Guide Lines & Skeletal Overlay SVG -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" id="vector-guides-layer" viewbox="0 0 880 640">
+<!-- Pin 1: Rim Light Brush Arcs -->
+<path class="animate-pulse" d="M 470 120 C 510 145, 545 190, 530 250" stroke="#99cbff" stroke-dasharray="4 4" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 455 105 C 495 125, 530 170, 515 220" opacity="0.8" stroke="#31a8ff" stroke-linecap="round" stroke-width="2"></path>
+<!-- Pin 2: Anatomy Spine Curve Correction Arrow -->
+<path d="M 440 230 Q 420 320 460 410" stroke="#ffc07f" stroke-linecap="round" stroke-width="3.5"></path>
+<polygon fill="#ffc07f" points="463,422 453,405 471,409"></polygon>
+<path d="M 390 290 L 510 320" opacity="0.7" stroke="#ffc07f" stroke-dasharray="6 3" stroke-width="1.5"></path>
+<!-- Pin 3: Bounce Light Ground Reflection Vectors -->
+<path d="M 370 480 C 400 450, 440 460, 470 490" stroke="#fd9900" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M 420 470 L 420 420" stroke="#fd9900" stroke-dasharray="3 3" stroke-width="2"></path>
+<polygon fill="#fd9900" points="420,410 415,424 425,424"></polygon>
+</svg>
+</div>
+<!-- Split Divider Draggable Line & Handle -->
+<div class="absolute top-0 bottom-0 w-1 bg-primary z-30 cursor-ew-resize flex items-center justify-center shadow-[0_0_12px_rgba(49,168,255,0.7)]" id="split-handle" style="left: 52%;">
+<div class="w-8 h-8 rounded-full bg-surface-container-high shadow-lg flex items-center justify-center text-primary border-none">
+<span class="material-symbols-outlined text-sm font-bold">drag_indicator</span>
+</div>
+<!-- Label pill indicators -->
+<span class="absolute top-4 -left-20 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm pointer-events-none shadow backdrop-blur-sm">PAINTOVER</span>
+<span class="absolute top-4 -right-18 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface-variant font-label-sm text-label-sm pointer-events-none shadow backdrop-blur-sm">ORIGINAL</span>
+</div>
+<!-- Callout Pin 1: Rim Light (Top Right of Head) -->
+<div class="pin-marker absolute cursor-pointer z-30 transition-transform hover:scale-125" id="pin-1-node" onclick="selectPin(1)" style="top: 145px; left: 510px;">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-primary-container/40 animate-ping"></span>
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-lg">1</div>
+</div>
+<!-- Tooltip preview -->
+<div class="pin-tooltip absolute left-9 -top-2 w-56 p-2 rounded-lg bg-surface-container-high shadow-xl text-on-surface font-body-sm text-body-sm pointer-events-none hidden md:block">
+<div class="font-label-md text-label-md font-semibold text-primary">#1 Rim Light Highlight</div>
+<p class="text-on-surface-variant text-xs line-clamp-2 mt-0.5">แสงริมผมแข็งไป ปรับสโตรก Soft Brush โทน #B8EEFF</p>
+</div>
+</div>
+<!-- Callout Pin 2: Anatomy & Pose Correction (Mid Spine) -->
+<div class="pin-marker absolute cursor-pointer z-30 transition-transform hover:scale-125" id="pin-2-node" onclick="selectPin(2)" style="top: 310px; left: 430px;">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-secondary/40 animate-ping"></span>
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-lg">2</div>
+</div>
+<div class="pin-tooltip absolute right-9 -top-2 w-56 p-2 rounded-lg bg-surface-container-high shadow-xl text-on-surface font-body-sm text-body-sm pointer-events-none hidden md:block text-right">
+<div class="font-label-md text-label-md font-semibold text-secondary">#2 สรีระแนวกระดูกสันหลัง</div>
+<p class="text-on-surface-variant text-xs line-clamp-2 mt-0.5">ปรับมุมเอียงรับน้ำหนักดาบ ให้สะโพกบิดสอดคล้อง</p>
+</div>
+</div>
+<!-- Callout Pin 3: Bounce Light & Contrast (Armor Base) -->
+<div class="pin-marker absolute cursor-pointer z-30 transition-transform hover:scale-125" id="pin-3-node" onclick="selectPin(3)" style="top: 460px; left: 415px;">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-tertiary/40 animate-ping"></span>
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-lg">3</div>
+</div>
+<div class="pin-tooltip absolute left-9 -top-2 w-56 p-2 rounded-lg bg-surface-container-high shadow-xl text-on-surface font-body-sm text-body-sm pointer-events-none hidden md:block">
+<div class="font-label-md text-label-md font-semibold text-tertiary">#3 ค่าแสงตกกระทบ Bounce Light</div>
+<p class="text-on-surface-variant text-xs line-clamp-2 mt-0.5">เกราะทึบเกินไป ดึงแสงสะท้อนโทนส้มจากพื้นถนน</p>
+</div>
+</div>
+</div>
+<!-- Floating Bottom Quick-Adjustment Bar -->
+<div class="absolute bottom-4 left-4 right-4 lg:left-auto lg:right-auto lg:w-[640px] bg-surface-container-lowest/85 backdrop-blur-md rounded-xl p-space-sm shadow-2xl z-30 flex flex-wrap items-center justify-between gap-space-sm select-none">
+<!-- Opacity Slider -->
+<div class="flex items-center gap-space-sm min-w-[200px] flex-1">
+<span class="material-symbols-outlined text-outline text-lg">opacity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Paintover Layer:</span>
+<input class="w-full accent-primary h-1.5 bg-surface-container-highest rounded-lg cursor-pointer" id="opacity-slider" max="100" min="0" oninput="updatePaintoverOpacity(this.value)" type="range" value="100"/>
+<span class="font-label-sm text-label-sm text-on-surface font-mono w-9 text-right" id="opacity-val">100%</span>
+</div>
+<div class="h-5 w-px bg-surface-container-highest hidden sm:block"></div>
+<!-- Extracted Palette Breakdown -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-outline hidden md:inline">Key Palette:</span>
+<div class="flex items-center gap-1">
+<div class="w-5 h-5 rounded bg-[#0C101B] shadow-inner cursor-pointer hover:scale-110 transition-transform" title="#0C101B Base Night Navy"></div>
+<div class="w-5 h-5 rounded bg-[#243447] shadow-inner cursor-pointer hover:scale-110 transition-transform" title="#243447 Cyber Armor Tint"></div>
+<div class="w-5 h-5 rounded bg-[#B8EEFF] shadow-inner cursor-pointer hover:scale-110 transition-transform ring-1 ring-primary" title="#B8EEFF Mentor Rim Light"></div>
+<div class="w-5 h-5 rounded bg-[#FF9A3D] shadow-inner cursor-pointer hover:scale-110 transition-transform ring-1 ring-secondary" title="#FF9A3D Ground Bounce Amber"></div>
+<div class="w-5 h-5 rounded bg-[#FF3D71] shadow-inner cursor-pointer hover:scale-110 transition-transform" title="#FF3D71 Visor Crimson"></div>
+</div>
+</div>
+<div class="h-5 w-px bg-surface-container-highest hidden xl:block"></div>
+<!-- Shortcuts Pill / Hint -->
+<div class="hidden xl:flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">keyboard</span>
+<span>Space: เลื่อนภาพ | [ ]: ย่อ/ขยาย | Tab: ซ่อนพาเนล</span>
+</div>
+</div>
+</div>
+<!-- Right: Collapsible Inspector / Deep-Dive Critique Drawer -->
+<aside class="w-full lg:w-[420px] xl:w-[460px] bg-surface-container-low/95 backdrop-blur-xl flex flex-col shadow-2xl z-30 overflow-hidden flex-shrink-0" id="critique-inspector">
+<!-- Inspector Header -->
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">fact_check</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">จุดตรวจแก้ไขทีละขั้นตอน</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step-by-Step Pinpoints (3 จุดสำคัญ)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm">ได้รับคำแนะนำแล้ว</span>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="toggleInspector()" title="พับเก็บหน้าต่างนี้">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Pinpoints Scrollable Feed -->
+<div class="flex-1 overflow-y-auto p-space-md space-y-space-md" style="max-height: calc(100vh - 280px);">
+<!-- PIN 1 CARD (ACTIVE STATE) -->
+<div class="pin-card active p-space-md rounded-xl bg-surface-container transition-all cursor-pointer shadow-md" id="card-pin-1" onclick="selectPin(1)">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-xs font-bold flex items-center justify-center">1</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ขอบไฮไลต์ผม Rim Light แข็งเกินไป</h3>
+<span class="font-label-sm text-label-sm text-primary">Lighting &amp; Edge Control</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-base">radio_button_checked</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-sm">
+            สังเกตว่าขอบแสงไฟนีออนด้านหลัง (Rim Light) ปาดด้วยบรัชขอบแข็ง 100% ทำให้ผมดูเป็นแผ่นพลาสติก แนะนำให้ผสมสโตรกด้วย Soft Airbrush ให้แสงกระจายฟุ้งกลืนเข้าหาบรรยากาศฝนตก
+          </p>
+<!-- Mentor Audio Note Player Component -->
+<div class="bg-surface-container-high rounded-lg p-2.5 flex items-center gap-3 mb-space-sm">
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 transition-transform active:scale-95 shadow" onclick="event.stopPropagation(); toggleAudioPlay(this)">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between text-xs font-mono text-on-surface mb-1">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-xs text-primary">mic</span>
+                  เสียงอธิบายจากเมนทอร์
+                </span>
+<span class="text-on-surface-variant">0:42 น.</span>
+</div>
+<!-- Simulated Waveform -->
+<div class="h-3 flex items-center gap-0.5 w-full">
+<div class="w-1 h-2 bg-primary rounded-full"></div>
+<div class="w-1 h-3 bg-primary rounded-full"></div>
+<div class="w-1 h-1.5 bg-primary rounded-full"></div>
+<div class="w-1 h-3 bg-primary rounded-full"></div>
+<div class="w-1 h-2.5 bg-primary/60 rounded-full"></div>
+<div class="w-1 h-1 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-3 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-2 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-1.5 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-3 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-2 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-1 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-2.5 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-3 bg-surface-container-highest rounded-full"></div>
+<div class="w-1 h-2 bg-surface-container-highest rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Color Swatch & Brush Recommendations -->
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div class="p-2 rounded bg-surface-container-high flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">ค่าสีแนะนำ (Recommended Swatch)</span>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded bg-[#B8EEFF] shadow"></span>
+<span class="font-mono text-on-surface font-medium">#B8EEFF (Glaze)</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container-high flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">การตั้งค่าบรัช (Procreate)</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Glaze 45% / Streamline 70%</span>
+</div>
+</div>
+</div>
+<!-- PIN 2 CARD -->
+<div class="pin-card p-space-md rounded-xl bg-surface-container transition-all cursor-pointer shadow hover:bg-surface-container-high" id="card-pin-2" onclick="selectPin(2)">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-headline-sm text-xs font-bold flex items-center justify-center">2</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">สัดส่วนสรีระ &amp; แนวกระดูกสันหลัง</h3>
+<span class="font-label-sm text-label-sm text-secondary">Anatomy &amp; Dynamic Line of Action</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-base">radio_button_unchecked</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-sm">
+            ลำตัวท่อนบนตรงทื่อเกินไปสำหรับการถือดาบพลังงานขนาดใหญ่ ปรับแนวกระดูกสันหลังให้โค้งรูปตัว C เล็กน้อย พร้อมกดไหล่ขวาลง 5 องศาเพื่อถ่ายน้ำหนักสมจริง
+          </p>
+<div class="flex items-center gap-3 p-2 rounded bg-surface-container-high">
+<img class="w-14 h-14 rounded object-cover flex-shrink-0" data-alt="Close-up pencil and neon cyan anatomical posture wireframe sketch illustrating dynamic curved spine versus rigid straight spine for video game warrior character." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW76PJhYwcE_KVUt0Lp9iHKYXoSYYFW5c82TcYBOW8zFwIdgcVJNejsADEmeP23bYHnBj-qIAoOyPl4PGlIbMtJmL1v-HAaMKGZglzDFlf3rRlDYdtB8OjOt8U7DJNN81FNbT5gxK911MlRQY10hMrZeB6hT48vLeVXLdhdiSOOXcD6joKnhZbytO_y_Z9iJt1yV16iT8JLa__yRzcvY2e4EzLc5tBYqcx-uAu8-teTzGJlCRQQ5QvDQ"/>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block truncate">เส้นไกด์โครงสร้างกระดูก (Anatomy Wireframe)</span>
+<span class="text-xs text-on-surface-variant">แตะเพื่อซูมดูเลเยอร์สเก็ตช์ร่างทับ</span>
+</div>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+</div>
+</div>
+<!-- PIN 3 CARD -->
+<div class="pin-card p-space-md rounded-xl bg-surface-container transition-all cursor-pointer shadow hover:bg-surface-container-high" id="card-pin-3" onclick="selectPin(3)">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary font-headline-sm text-xs font-bold flex items-center justify-center">3</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ค่าคอนทราสต์เงาบริเวณชุดเกราะ</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Values &amp; Ambient Occlusion</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-base">radio_button_unchecked</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-sm">
+            บริเวณเกราะท่อนล่างมืดจนเสีย Detail รูปทรงทรงกระบอก เติม Bounce Light โทนส้มอุ่นจากน้ำขังที่พื้น จะทำให้ชุดเกราะเหล็กดูมี Volume สามมิติ
+          </p>
+<!-- Contrast Histogram Indicator -->
+<div class="p-2.5 rounded bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">equalizer</span>
+<span class="font-label-sm text-label-sm text-on-surface">Dynamic Range Value</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">เพิ่ม Midtones +18%</span>
+</div>
+</div>
+<!-- Mentor's Custom Preset Download Card -->
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex items-center justify-between gap-3 shadow-inner">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-lg">gesture</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">MentorTan_RimLight_Brush.brushset</span>
+<span class="text-xs text-on-surface-variant">หัวแปรงที่ใช้สำหรับ Paintover นี้โดยเฉพาะ</span>
+</div>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 flex-shrink-0 transition-colors">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>โหลดแปรง</span>
+</button>
+</div>
+</div>
+<!-- Student Interactive Q&A Discussion Reply Input at Bottom -->
+<div class="p-space-md bg-surface-container">
+<form class="flex flex-col gap-2" onsubmit="event.preventDefault(); submitStudentQuestion();">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1" for="question-input">
+<span class="material-symbols-outlined text-xs text-primary">chat</span>
+              สอบถามเพิ่มเติมเกี่ยวกับจุดที่เลือก (Pin #1)
+            </label>
+<span class="text-xs text-outline">Enter ส่งข้อความ</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm px-3 py-2 pr-12 rounded-lg border-none focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="question-input" placeholder="พิมพ์สอบถามข้อสงสัยในจุดนี้กับเมนทอร์..." type="text"/>
+<button class="absolute right-1.5 top-1.5 w-7 h-7 rounded bg-primary-container text-on-primary-container hover:bg-primary flex items-center justify-center transition-colors" type="submit">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  let currentZoom = 100;
+  let isFlipped = false;
+  let isGridVisible = false;
+  let activePin = 1;
+  let currentMode = 'split';
+
+  function adjustZoom(delta) {
+    currentZoom = Math.min(Math.max(50, currentZoom + delta), 250);
+    applyZoom();
+  }
+
+  function resetZoom() {
+    currentZoom = 100;
+    applyZoom();
+  }
+
+  function applyZoom() {
+    const val = document.getElementById('zoom-val');
+    const viewport = document.getElementById('canvas-viewport');
+    if (val) val.innerText = currentZoom + '%';
+    if (viewport) {
+      const flipScale = isFlipped ? -1 : 1;
+      viewport.style.transform = `scale(${currentZoom / 100}) scaleX(${flipScale})`;
+    }
+  }
+
+  function toggleFlipCanvas() {
+    isFlipped = !isFlipped;
+    const btn = document.getElementById('btn-flip');
+    if (btn) {
+      if (isFlipped) {
+        btn.classList.add('bg-primary-container', 'text-on-primary-container');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    }
+    applyZoom();
+  }
+
+  function toggleGridOverlay() {
+    isGridVisible = !isGridVisible;
+    const grid = document.getElementById('rule-of-thirds-grid');
+    const btn = document.getElementById('btn-grid');
+    if (grid) grid.classList.toggle('hidden', !isGridVisible);
+    if (btn) {
+      if (isGridVisible) {
+        btn.classList.add('bg-primary-container', 'text-on-primary-container');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    }
+  }
+
+  function toggleProbeTool() {
+    const btn = document.getElementById('btn-probe');
+    if (btn) {
+      btn.classList.toggle('bg-primary-container');
+      btn.classList.toggle('text-on-primary-container');
+    }
+  }
+
+  function updatePaintoverOpacity(val) {
+    const label = document.getElementById('opacity-val');
+    const paintoverImg = document.getElementById('paintover-image');
+    const vectorGuides = document.getElementById('vector-guides-layer');
+    if (label) label.innerText = val + '%';
+    const opacityFloat = val / 100;
+    if (paintoverImg) paintoverImg.style.opacity = opacityFloat;
+    if (vectorGuides) vectorGuides.style.opacity = opacityFloat;
+  }
+
+  function switchViewerMode(mode) {
+    currentMode = mode;
+    const buttons = document.querySelectorAll('.mode-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('active', 'bg-surface-container-high', 'text-primary');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    const activeBtn = document.getElementById(`mode-${mode}`);
+    if (activeBtn) {
+      activeBtn.classList.add('active', 'bg-surface-container-high', 'text-primary');
+      activeBtn.classList.remove('text-on-surface-variant');
+    }
+
+    const overlay = document.getElementById('split-overlay-container');
+    const handle = document.getElementById('split-handle');
+    const paintoverImg = document.getElementById('paintover-image');
+    const vectorGuides = document.getElementById('vector-guides-layer');
+
+    if (!overlay || !handle || !paintoverImg) return;
+
+    if (mode === 'split') {
+      overlay.style.clipPath = 'polygon(0 0, 52% 0, 52% 100%, 0 100%)';
+      handle.style.display = 'flex';
+      paintoverImg.style.display = 'block';
+      paintoverImg.style.opacity = '1';
+      if (vectorGuides) vectorGuides.style.display = 'block';
+    } else if (mode === 'paintover') {
+      overlay.style.clipPath = 'none';
+      handle.style.display = 'none';
+      paintoverImg.style.display = 'block';
+      paintoverImg.style.opacity = '1';
+      if (vectorGuides) vectorGuides.style.display = 'block';
+    } else if (mode === 'original') {
+      overlay.style.clipPath = 'none';
+      handle.style.display = 'none';
+      paintoverImg.style.display = 'none';
+      if (vectorGuides) vectorGuides.style.display = 'none';
+    } else if (mode === 'guides') {
+      overlay.style.clipPath = 'none';
+      handle.style.display = 'none';
+      paintoverImg.style.display = 'none';
+      if (vectorGuides) vectorGuides.style.display = 'block';
+    }
+  }
+
+  function selectPin(num) {
+    activePin = num;
+    [1, 2, 3].forEach(id => {
+      const card = document.getElementById(`card-pin-${id}`);
+      if (card) {
+        if (id === num) {
+          card.classList.add('bg-surface-container-high');
+          card.classList.remove('bg-surface-container');
+        } else {
+          card.classList.remove('bg-surface-container-high');
+          card.classList.add('bg-surface-container');
+        }
+      }
+    });
+
+    const inputLabel = document.querySelector('label[for="question-input"]');
+    if (inputLabel) {
+      inputLabel.innerHTML = `<span class="material-symbols-outlined text-xs text-primary">chat</span> สอบถามเพิ่มเติมเกี่ยวกับจุดที่เลือก (Pin #${num})`;
+    }
+  }
+
+  function toggleAudioPlay(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      if (icon.innerText === 'play_arrow') {
+        icon.innerText = 'pause';
+      } else {
+        icon.innerText = 'play_arrow';
+      }
+    }
+  }
+
+  function toggleInspector() {
+    const inspector = document.getElementById('critique-inspector');
+    if (inspector) {
+      inspector.classList.toggle('hidden');
+    }
+  }
+
+  function submitStudentQuestion() {
+    const input = document.getElementById('question-input');
+    if (!input || !input.value.trim()) return;
+    alert(`ส่งคำถามในจุด Pin #${activePin} ถึง Mentor Tan แล้ว:\n"${input.value}"`);
+    input.value = '';
+  }
+
+  // Interactive Drag for Split Slider
+  const container = document.getElementById('canvas-viewport');
+  const splitHandle = document.getElementById('split-handle');
+  const splitOverlay = document.getElementById('split-overlay-container');
+  let isDraggingSplit = false;
+
+  if (splitHandle && container && splitOverlay) {
+    const startDrag = () => { isDraggingSplit = true; };
+    const stopDrag = () => { isDraggingSplit = false; };
+    const doDrag = (e) => {
+      if (!isDraggingSplit || currentMode !== 'split') return;
+      const rect = container.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const offsetX = clientX - rect.left;
+      let percentage = (offsetX / rect.width) * 100;
+      percentage = Math.max(5, Math.min(95, percentage));
+      
+      splitHandle.style.left = percentage + '%';
+      splitOverlay.style.clipPath = `polygon(0 0, ${percentage}% 0, ${percentage}% 100%, 0 100%)`;
+    };
+
+    splitHandle.addEventListener('mousedown', startDrag);
+    splitHandle.addEventListener('touchstart', startDrag);
+    window.addEventListener('mouseup', stopDrag);
+    window.addEventListener('touchend', stopDrag);
+    window.addEventListener('mousemove', doDrag);
+    window.addEventListener('touchmove', doDrag);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><img alt="CanvasMentor Logo" class="h-6 w-auto object-contain opacity-70" src="https://lh3.googleusercontent.com/aida/AEtjO1XrvMiOTbW42nFSZrjp80uR0WlWzmZOiNaHtrqwgQg_ADICLEkgaKS8orLSJteaFXM20glpDQsxARDWu41MVF5bHaPnh2BqW787Qr7kr96vthY6p8InJ4_U3ZozlMR6Qkns5nOrz-cOt4ELZYF0o3NVheUSa2xlq204ccFN79y2GGw_RHl1ngtFPJLHID_ZxGKhXbmymIlZV177aV822HysbkRoBDQw2tikc91QrDTo0oK4H7r9bo8WxTI"/><span class="font-body-sm text-body-sm">© 2025 CanvasMentor. แพลตฟอร์มการเรียนรู้และให้คำปรึกษาศิลปะดิจิทัลระดับมืออาชีพ</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">คู่มือการใช้งาน</a><a class="hover:text-on-surface transition-colors" href="#">มาตรฐานการตรวจงาน</a><a class="hover:text-on-surface transition-colors" href="#">เงื่อนไขการให้บริการ</a></div></div></footer></body></html>
